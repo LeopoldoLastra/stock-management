@@ -5,7 +5,6 @@ const {RemitoAsociado, RemitosAsociadosSchema}=require('./remito.asociado.model'
 const {DependenciaLogistica, DependenciasLogisticaSchema}= require('./dependencia.logistica.model');
 const {Entrega, EntregasSchema}= require('./entregas.model');
 const {Cliente, ClientesSchema}= require('./cliente.model');
-const {Clave, ClavesSchema}= require('./clave.model');
 const {Usuario, UsuariosSchema}= require('./usuario.model');
 const {Dependencia, DependenciasSchema}= require('./dependencia.model');
 const {Stock, StockSchema}= require('./stock.model');
@@ -25,7 +24,6 @@ function setupModels(sequelize){
     DependenciaLogistica.init(DependenciasLogisticaSchema, DependenciaLogistica.config(sequelize));
     Entrega.init(EntregasSchema, Entrega.config(sequelize));
     Cliente.init(ClientesSchema, Cliente.config(sequelize));
-    Clave.init(ClavesSchema, Clave.config(sequelize));
     Usuario.init(UsuariosSchema, Usuario.config(sequelize));
     Dependencia.init(DependenciasSchema, Dependencia.config(sequelize));
     Stock.init(StockSchema,Stock.config(sequelize));
